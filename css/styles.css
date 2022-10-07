@@ -33,6 +33,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -60,8 +62,12 @@ button {
 }
 
 .btn {
-  display: block;
-  padding: 10px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -101,7 +107,6 @@ button {
 
 /* header */
 .header {
-  padding: 25px 0;
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -125,6 +130,7 @@ button {
 }
 
 .header-logo {
+  padding: 25px 0;
   margin-right: 93px;
 }
 
@@ -135,6 +141,7 @@ button {
 .header-link {
   display: flex;
   align-items: center;
+  padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -173,6 +180,7 @@ button {
 }
 
 .banner-title {
+  max-width: 696px;
   color: var(--third-text-color);
   text-transform: uppercase;
   text-align: center;
@@ -180,7 +188,7 @@ button {
   font-size: 44px;
   line-height: 60px;
   letter-spacing: 0.06em;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
 }
 
 .banner-btn {
@@ -205,7 +213,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  height: 120px;
   margin-bottom: 30px;
   background: var(--third-bg);
   border-radius: 4px;
@@ -331,7 +339,6 @@ button {
   line-height: 1.62;
   border-radius: 4px;
   border: none;
-  outline: none;
 }
 
 .filter__button:hover,
@@ -349,13 +356,15 @@ button {
 
 .client {
   width: calc(100%/6 - 30px/6*5);
+  height: 92px;
 }
 
 .client-link {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   fill: #AFB1B8;
@@ -379,13 +388,16 @@ button {
   width: calc(33.333% - 30px/3*2);
 }
 
-.project:hover {
+.project-link {
+  display: block;
+}
+
+.project-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project__text-container {
   padding: 20px 24px;
-  background: #fff;
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
@@ -414,6 +426,7 @@ button {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer--left {
